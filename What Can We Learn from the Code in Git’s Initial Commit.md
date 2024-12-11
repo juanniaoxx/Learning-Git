@@ -59,3 +59,15 @@ git的目录结构
 ## 阅读《Pro git》的收获
 
 - git使用`SHA-1` hash的手段检测文件/文件夹的完整性，并通过其索引文件。
+
+> ##### .gitignore 的规则
+>
+> - Blank lines or lines starting with # are ignored.
+> - Standard glob patterns[^1] work, and will be applied recursively throughout the entire working tree.
+> - You can start patterns with a forward slash (/) to avoid recursivity.
+> - You can end patterns with a forward slash (/) to specify a directory.
+> - You can negate a pattern by starting it with an exclamation point (!).
+
+[^1]: 类似于简化的正则表达式
+
+[关于gitignore的案例](https://github.com/github/gitignore)
