@@ -72,3 +72,26 @@ git的目录结构
 
 [关于gitignore的案例](https://github.com/github/gitignore)
 
+### 常用指令的介绍
+
+> #### `git log`
+>
+> 不带任何参数的git log会按时间倒序展示所有commit记录，包括作者、SHA-1值、commmit message、时间等等。
+>
+> 常用参数
+>
+> - `-p` / `--patch` 用于显示每次commit的具体差异 
+>   - 可以加上参数 `-n`具体显示几条commit
+>   - ![image-20241211121922690](/home/zhw/.config/Typora/typora-user-images/git_log_p_example.png)
+> - `--stat` 简要展示汇总信息
+>   - ![image-20241211122144031](/home/zhw/.config/Typora/typora-user-images/git_log_stat_example.png)
+> - `--pretty=options` 可以修改输出的格式
+>   - `oneline` 将每次commit的输出在一行上
+>   - `shor`\\`full`\\`fuller` 展示简短\\完整\\更多信息
+>   - `format:"参数"` 
+>     - `git log --pretty=format:"%h - %an, %ar: %s"`
+>     - ![image-20241211122612010](/home/zhw/.config/Typora/typora-user-images/git_log_format_example.png)
+>     - ![image-20241211122650986](/home/zhw/.config/Typora/typora-user-images/table_for_pretty_format.png)
+>     - `--graph` 会绘制一个漂亮的ASCII branch and merge history
+>   - ![image-20241211123110863](/home/zhw/.config/Typora/typora-user-images/table_for_git_log_option.png)
+
